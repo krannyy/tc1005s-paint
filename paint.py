@@ -1,4 +1,4 @@
-"""Paint, for drawing shapes.
+nano paint.py"""Paint, for drawing shapes.
 
 Exercises
 
@@ -8,7 +8,7 @@ Exercises
 4. Complete triangle.
 5. Add width parameter.
 """
-
+nano paint.py
 import turtle
 from turtle import (
     begin_fill, color, done, down, end_fill, forward, goto,
@@ -73,25 +73,19 @@ def tap(x, y):
         state['start'] = None
 
 
-def store(key, value):
-    """Store value in state at key."""
-    state[key] = value
 
-
-state = {'start': None, 'shape': line}
-setup(420, 420, 370, 0)
-onscreenclick(tap)
-listen()
-onkey(undo, 'u')
-onkey(lambda: color('black'), 'K')
-onkey(lambda: color('white'), 'W')
-onkey(lambda: color('green'), 'G')
-onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
-onkey(lambda: color('yellow'), 'Y')
+nano paint.pyonkey(lambda: color('yellow'), 'Y')
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle), 'c')
 onkey(lambda: store('shape', rectangle), 'r')
 onkey(lambda: store('shape', triangle), 't')
 done()
+
+onkey(lambda: color('green'), 'G')
+onkey(lambda: color('blue'), 'B')
+onkey(lambda: color('red'), 'R')
+nano paint.pyonkey(lambda: color('yellow'), 'Y')
+onkey(lambda: store('shape', line), 'l')
+onkey(lambda: store('shape', square), 's')
