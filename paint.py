@@ -1,4 +1,4 @@
-nano paint.py"""Paint, for drawing shapes.
+"""Paint, for drawing shapes.
 
 Exercises
 
@@ -8,7 +8,7 @@ Exercises
 4. Complete triangle.
 5. Add width parameter.
 """
-nano paint.py
+
 import turtle
 from turtle import (
     begin_fill, color, done, down, end_fill, forward, goto,
@@ -75,7 +75,7 @@ def tap(x, y):
 
 
 onkey(lambda: color('red'), 'R')
-nano paint.pyonkey(lambda: color('yellow'), 'Y')
+onkey(lambda: color('yellow'), 'Y')
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle), 'c')
@@ -86,6 +86,6 @@ done()
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
-nano paint.pyonkey(lambda: color('yellow'), 'Y')
+onkey(lambda: color('yellow'), 'Y')
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
