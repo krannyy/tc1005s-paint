@@ -9,7 +9,11 @@ Exercises
 5. Add width parameter.
 """
 
-from turtle import *
+import turtle
+from turtle import (
+    begin_fill, color, done, down, end_fill, forward, goto,
+    left, listen, onkey, onscreenclick, setup, undo, up,
+)
 
 from freegames import vector
 
