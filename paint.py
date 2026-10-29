@@ -9,6 +9,7 @@ Exercises
 5. Add a thickness parameter.
 """
 
+import turtle
 from turtle import (
     color, done, down, goto, listen, onkey,
     onscreenclick, setup, undo, up, begin_fill,
@@ -42,7 +43,12 @@ def square(start, end):
 
 def circle(start, end):
     """Draw circle from start to end."""
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    turtle.circle(end.x - start.x)
+    end_fill()
 
 
 def rectangle(start, end):
